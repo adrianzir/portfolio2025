@@ -1,0 +1,55 @@
+/* Botón circular "Scroll to Top" */
+.scroll-top {
+    position: relative;
+    bottom: -200px;
+    left: 45%;
+    width: 90px;
+    height: 90px;
+    background-color: #08CB00;
+    /* verde brillante */
+    color: #000000;
+    /* flecha en negro */
+    border: none;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 40px;
+    /* tamaño de la flecha */
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    transition: background 0.3s, transform 0.3s;
+    z-index: 1000;
+    /* siempre visible */
+}
+
+/* Hover */
+.scroll-top:hover {
+    background-color: #253900;
+    /* verde oscuro */
+    color: #EEEEEE;
+    /* flecha clara */
+    transform: scale(1.1);
+    /* efecto de zoom */
+}
+/* Botones */
+.btn {
+    background-color: #08CB00;
+    /* verde brillante */
+    color: #000000;
+    /* negro para contraste */
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s, color 0.3s;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.btn:hover {
+    background-color: #253900;
+    /* verde oscuro */
+    color: #EEEEEE;
+    /* texto claro */
+}

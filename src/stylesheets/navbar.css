@@ -1,0 +1,68 @@
+/* Barra de navegación */
+.navbar {
+    display: flex;
+    justify-content: space-around;
+    /* separa logo y links */
+    align-items: center;
+    background-color: #253900;
+    /* verde oscuro */
+    padding: 15px 30px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+}
+
+.navbar-title {
+    color: #08CB00;
+    /* verde brillante */
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* Lista de navegación */
+.navbar ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    /* espacio entre links */
+    margin: 0;
+    padding: 0;
+}
+
+/* Links */
+.navbar ul li a {
+    text-decoration: none;
+    color: #EEEEEE;
+    /* gris claro */
+    font-weight: 500;
+    padding: 8px 12px;
+    border-radius: 6px;
+    transition: background 0.3s, color 0.3s;
+}
+
+/* Hover en links */
+.navbar ul li a:hover {
+    background-color: #08CB00;
+    /* verde brillante */
+    color: #000000;
+    /* negro */
+}
+
+/* Botón especial */
+.navbar .btn-nav {
+    background-color: #08CB00;
+    /* verde brillante */
+    color: #000000;
+    /* negro */
+    padding: 8px 16px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background 0.3s, color 0.3s;
+}
+
+.navbar .btn-nav:hover {
+    background-color: #37353E;
+    /* gris oscuro */
+    color: #EEEEEE;
+    /* gris claro */
+}
