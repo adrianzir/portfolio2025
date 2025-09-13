@@ -9,6 +9,7 @@
 /* Contenedor principal centrado */
 .container {
     display: flex;
+    width: 100%;
     flex-direction: column;
     /* Apila elementos */
     align-items: center;
@@ -25,6 +26,9 @@
 
 /* Caja con estilos */
 .card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     background-color: #253900;
     /* verde oscuro */
     color: #EEEEEE;
@@ -32,7 +36,7 @@
     border-radius: 12px;
     padding: 15px;
     margin: 15px 10px;
-    max-width: 300px;
+    width: 300px;
     text-align: center;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
     /* más oscuro */
@@ -61,6 +65,6 @@ p {
 
 .center{
     display: flex;
-    flex-direction: row;
+    align-items: center;
     justify-content: space-between;
 }

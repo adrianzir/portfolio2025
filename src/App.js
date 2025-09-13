@@ -1,4 +1,3 @@
-import Rectangle from "./components/Rectangle";
 import Navbar from "./components/Navbar";
 import Projects from "./components/Projects";
 import Contact from "./components/Contact";

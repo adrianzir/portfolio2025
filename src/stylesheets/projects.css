@@ -1,0 +1,26 @@
+.projects-section {
+    width: 100%;
+    overflow-x: auto;
+    padding-bottom: 20px;
+    margin-top: 20px;
+}
+
+.projects-carousel {
+    display: flex;
+    flex-direction: row;
+    width: max-content;
+    height: auto;
+}
+
+.projects-section::-webkit-scrollbar {
+    background-color: #253900;
+    height: 6px;
+    border-radius: 10px;
+
+    /* scroll horizontal más delgado */
+}
+
+.projects-section::-webkit-scrollbar-thumb {
+    background: #08CB00;
+    border-radius: 10px;
+}
