@@ -8,7 +8,7 @@ function Landing() {
             <h1 className="landing-h1">ADRIAN ZAMBRANO</h1>
             <h3>Fullstack Junior</h3>
             <p>Discover my projects and skills in web development.</p>
-            <button className="btn" onClick={ () => window.open("/cv.pdf", "_blank")}>More info in my CV</button>
+            <button className="btn" onClick={ () => window.open("../../public/cv.pdf", "_blank")}>More info in my CV</button>
         </div>
     );
 }
