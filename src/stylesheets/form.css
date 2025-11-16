@@ -1,0 +1,53 @@
+/* Variables para facilitar la personalización */
+:root {
+    --color-principal: #08CB00;
+    /* Verde brillante */
+    --color-texto: #000000;
+    /* Texto oscuro */
+    --radio-curva: 12px;
+    /* Bordes curvos */
+    --duracion-animacion: 0.3s;
+}
+
+/* --- ESTILOS DEL CONTENEDOR FORMULARIO --- */
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    background: #253900;
+    padding: 30px;
+    border-radius: var(--radio-curva);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+    transition: box-shadow var(--duracion-animacion) ease-in-out;
+}
+form:hover {
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+/* --- ESTILOS DE LOS INPUTS --- */
+input, textarea {
+    /* Apariencia y Curvas */
+    width: 100%;
+    padding: 15px;
+    border: 1px solid #08CB00;
+    border-radius: 8px;
+    color: var(--color-texto);
+    transition: border-color var(--duracion-animacion) ease, box-shadow var(--duracion-animacion) ease;
+}
+
+/* --- ESTILOS DEL BOTÓN DE ENVÍO (SUBMIT) --- */
+.contact_submit_btn {
+    background: var(--color-principal);
+    color: var(--color-texto);
+    padding: 15px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    width: fit-content;
+}
+.contact_submit_btn:hover {
+    
+    box-shadow: #EEEEEE 1px 1px 4px;
+}
