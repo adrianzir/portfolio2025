@@ -1,73 +1,72 @@
 import "../stylesheets/basics.css";
 import "../stylesheets/projects.css";
+import "../stylesheets/buttons.css";
 import Rectangle from "./Rectangle";
 
 function Projects() {
     return (
         <div className="container" id="projects">
-            <h2>Projects</h2>
+            <h1>PROJECTS</h1>
             <p>Here are some of my recent works in web development.</p>
             <div className="center projects-section">
                 <div className="projects-carousel">
                 <Rectangle
-                title="Notes App with Python"
-                body="Un video donde se nota nuestra actuación al nivel Tim Cook (CEO de Apple, dicen que es mal actor), pero que vale la pena verlo: contamos qué estamos haciendo, mostramos parte del equipo y algunas pistas de lo que se viene."
+                title="Dashboard for personal finances"
+                body="Personal Finance Tracker – Web application for managing personal finances, allowing users to record income and expenses, organize transactions by category, and visualize financial data through interactive dashboards. Built with Flask, SQLAlchemy, SQLite, and Chart.js."
                 img="" 
                 altImg=""
+                skill1="Python"
+                skill2="Flask"
+                skill3="JavaScript"
+                skill4="SQLite" 
+                skill5 ="SQLAlchemy"
                 />
                 <Rectangle
-                title="API de autenticación con JWT"
-                body="Proyecto: Sistema de registro e inicio de sesión con roles, una API REST con Express.js que permita: Registrar usuarios (nombre, email, contraseña encriptada con bcrypt).
-                Iniciar sesión y devolver un token JWT.
-                Acceder a rutas protegidas (ej: /perfil, /admin) solo si el usuario está autenticado.
-                Definir roles (ej: usuario normal y administrador).
-                Tecnologías:
-                Node.js + Express
-                JWT (jsonwebtoken)
-                bcrypt para encriptar contraseñas
-                MongoDB o PostgreSQL para almacenar usuarios
-                Ejemplo de endpoints:
-                POST /register → registrar usuario
-                POST /login → devolver JWT
-                GET /perfil → requiere token válido
-                GET /admin → solo rol administrador"
-                img="" 
-                altImg=""
+                title="App de rutinas de gimnasio"
+                body="GYM-APP – Web application for managing gym workout routines (Push/Pull/Legs), built with Flask, Jinja2, and JavaScript. It allows users to create, edit, and delete workout routines with multiple exercises dynamically, using JSON for data persistence."
+                img="\gym_app_img_1.JPG" 
+                altImg="landing page gym app"
+                link="https://gym-app-u2d1.onrender.com"
+                skill1="Python"
+                skill2="Flask"
+                skill3="JavaScript"
+                skill4="JSON" 
+                dpskill5 ="display"           
                 />
                 <Rectangle
-                title="Football App"
-                body="Resultados y estadísticas en tiempo real Mostrar partidos en curso, resultados y próximos partidos. Estadísticas de equipos y jugadores (goles, asistencias, tarjetas, posesión). Ranking de ligas nacionales e internacionales. Alertas de goles o finalización de partidos"
-                img="" 
-                altImg=""
-                />
-                <Rectangle
-                title="Food Administrator"
-                body="Aplicación que indique alimentos e ingredientes necesarios para la preparación de comidas con sus propiedades alimenticias, calorias, proteinas y demás Una app donde el usuario puede:
-                Ver un listado de recetas (desde una API gratuita como TheMealDB
-                ). Buscar recetas por nombre o ingrediente.
-                Ver detalles: ingredientes, instrucciones y foto.
-                Guardar recetas favoritas en AsyncStorage para acceso offline.
-                Tecnologías: React Native (Expo para empezar más fácil), Fetch API / Axios, AsyncStorage (para persistencia local)
-                Pantallas sugeridas:
-                Home (lista de recetas)
-                Búsqueda
-                Detalle de receta
-                Favoritos
+                title="Portal de venta seguros"
+                body="Frontal Seguros – Web-based insurance platform that allows users to browse available insurance products and purchase policies online. Customers can register, log in, complete the purchase process, and access a personalized dashboard to manage their policies. The backend was developed with Python and Django, using SQLite as the database, while the frontend was built with the Django template engine and styled with modern, responsive CSS.
                 "
                 img=""
                 altImg=""
+                skill1="Python"
+                skill2="Django"
+                skill3="SQLite"
+                skill4="HTML5 & CSS3"
+                skill5="Antigravity IDE - AI Agent"
                 />
                 <Rectangle
                 title="Web Store"
-                body="Un video donde se nota nuestra actuación al nivel Tim Cook (CEO de Apple, dicen que es mal actor), pero que vale la pena verlo: contamos qué estamos haciendo, mostramos parte del equipo y algunas pistas de lo que se viene."
-                img=""
-                altImg=""
+                body="Online web clothing store, a simple e-commerce site where users can browse products, add to cart, and simulate checkout."
+                img="\wild_store_img.JPG"
+                link="https://adrianzir.github.io/wild_clothes_2/"
+                altImg="Wildd Store Image"
+                skill1="HTML5 & CSS3"
+                skill2="JavaScript"
+                skill3="SASS"
+                skill4="Responsive Design"
+                dpskill5="display"
                 />
                 <Rectangle
-                title="Web Store"
-                body="Un video donde se nota nuestra actuación al nivel Tim Cook (CEO de Apple, dicen que es mal actor), pero que vale la pena verlo: contamos qué estamos haciendo, mostramos parte del equipo y algunas pistas de lo que se viene."
+                title="Working on it"
+                body=""
                 img=""
                 altImg=""
+                dpskill1="display"
+                dpskill2="display"
+                dpskill3="display"
+                dpskill4="display"
+                dpskill5="display"
                 />
                 </div>
             </div>

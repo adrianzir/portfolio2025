@@ -1,6 +1,7 @@
 import "../stylesheets/buttons.css";
 import "../stylesheets/basics.css";
 import "../stylesheets/contact.css";
+import "../stylesheets/form.css";
 //import styles ^ -- import components v
 import Button from "./Button";
 //import icons
@@ -14,19 +15,22 @@ function Contact() {
 
     return (
         <div className="container" id="contact">
-            <h2>Contact</h2>
-            <p>If you'd like to get in touch, please reach out via email or social media.</p>
+            <h1>CONTACT</h1>
+            <p>If you'd like to get in touch:</p>
+            <h3><strong>Email: adrianzamstrong@gmail.com</strong></h3>
+            <h3><strong>Cellphone: (+56) 950106573</strong></h3>
             <div className="social-icons">
-                <a className="icon" href="https://www.linkedin.com/in/adrian-zambrano-058a741a1/" target="_blank"><ImLinkedin /></a>
+                <a className="icon" href="https://www.linkedin.com/in/adrian-zambrano-robles/" target="_blank"><ImLinkedin /></a>
                 <a className="icon" href="https://www.instagram.com/adrian.ed20/" target="_blank"><GrInstagram /></a>
                 <a className="icon" href="https://github.com/adrianzir" target="_blank"><VscGithubInverted /></a>
             </div>
             <Button 
-            classNameBtn="scroll-top "
+            classNameBtn="scroll-top"
             text= {<FaArrowUp />}
             btnFunction={ () => window.scrollTo({ top: 0, behavior: 'smooth' }) }
             ></Button> 
         </div>
     );
 }
+
 export default Contact;

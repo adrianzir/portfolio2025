@@ -7,6 +7,8 @@
     --radio-curva: 12px;
     /* Bordes curvos */
     --duracion-animacion: 0.3s;
+    /*color background 2*/
+    --bg-2: #24304A;
 }
 
 /* --- ESTILOS DEL CONTENEDOR FORMULARIO --- */
@@ -15,7 +17,7 @@ form {
     flex-direction: column;
     align-items: center;
     gap: 20px;
-    background: #253900;
+    background: var(--bg-2);
     padding: 30px;
     border-radius: var(--radio-curva);
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);

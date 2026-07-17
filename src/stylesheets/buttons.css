@@ -25,8 +25,8 @@
 
 /* Hover */
 .scroll-top:hover {
-    background-color: #253900;
     /* verde oscuro */
+    background-color: #07cb00bf;
     color: #EEEEEE;
     /* flecha clara */
     transform: scale(1.1);
@@ -48,8 +48,25 @@
 }
 
 .btn:hover {
-    background-color: #253900;
+    background-color: #07cb00bf;
     /* verde oscuro */
     color: #EEEEEE;
     /* texto claro */
+}
+.skill_span{
+    background-color: #08CB00;
+    color: #000000;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s, color 0.3s;
+    margin-top: 10px;
+    font-weight: bold;
+    height: 2rem;
+    width: fit-content;
+    font-size: small;
+}
+.skill_span:hover{
+        box-shadow: #EEEEEE 1px 1px 4px;
 }

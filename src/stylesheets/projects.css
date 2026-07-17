@@ -13,7 +13,7 @@
 }
 
 .projects-section::-webkit-scrollbar {
-    background-color: #253900;
+    background-color: #24304A;
     height: 6px;
     border-radius: 10px;
 
@@ -23,4 +23,36 @@
 .projects-section::-webkit-scrollbar-thumb {
     background: #08CB00;
     border-radius: 10px;
+}
+.skills{
+    flex-direction: column;
+    padding: 1rem;
+}
+#skills_div{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 10px;
+    margin: 1rem 0;
+}
+.rectangle_img {
+    width: 100%;
+    border-radius: 8px;
+    margin: 15px 0;
+}
+.display {
+    display: none;
+}
+.upper-block {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+}
+.lower-block {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+    justify-content: end;
 }
