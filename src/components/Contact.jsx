@@ -16,7 +16,7 @@ function Contact() {
     return (
         <div className="container" id="contact">
             <h1>CONTACT</h1>
-            <p>If you'd like to get in touch:</p>
+            <p>If you would like to get in touch:</p>
             <h3><strong>Email: adrianzamstrong@gmail.com</strong></h3>
             <h3><strong>Cellphone: (+56) 950106573</strong></h3>
             <div className="social-icons">
