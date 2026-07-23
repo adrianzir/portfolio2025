@@ -9,7 +9,7 @@ function Rectangle(props) {
     return <div className="card">
         <div className="upper-block">
         <h3>{props.title}</h3>
-        <img className="rectangle_img" src={ props.img } alt={props.altImg} />
+        <img className="rectangle_img" src={`${process.env.PUBLIC_URL}/images${ props.img }`} alt={props.altImg} />
         <div className="center">{props.body}</div>
         </div>
         <div className="lower-block">
