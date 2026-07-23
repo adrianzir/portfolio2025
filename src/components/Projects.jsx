@@ -24,7 +24,7 @@ function Projects() {
                 <Rectangle
                 title="App de rutinas de gimnasio"
                 body="GYM-APP – Web application for managing gym workout routines (Push/Pull/Legs), built with Flask, Jinja2, and JavaScript. It allows users to create, edit, and delete workout routines with multiple exercises dynamically, using JSON for data persistence."
-                img="\gym_app_img_1.JPG" 
+                img="/gym_app_img_1.JPG" 
                 altImg="landing page gym app"
                 link="https://gym-app-u2d1.onrender.com"
                 skill1="Python"
@@ -48,7 +48,7 @@ function Projects() {
                 <Rectangle
                 title="Web Store"
                 body="Online web clothing store, a simple e-commerce site where users can browse products, add to cart, and simulate checkout."
-                img="\wild_store_img.JPG"
+                img="/wild_store_img.JPG"
                 link="https://adrianzir.github.io/wild_clothes_2/"
                 altImg="Wildd Store Image"
                 skill1="HTML5 & CSS3"
