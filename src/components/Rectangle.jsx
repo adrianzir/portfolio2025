@@ -23,7 +23,7 @@ function Rectangle(props) {
             </div>
         </div>
 
-        <a class="btn" href={props.link} target="_blank">Link</a>
+        <a class="btn" href={props.link} target="_blank">Open</a>
         </div>
     </div>;
 }
