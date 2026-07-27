@@ -29,6 +29,7 @@ function Contact() {
             text= {<FaArrowUp />}
             btnFunction={ () => window.scrollTo({ top: 0, behavior: 'smooth' }) }
             ></Button> 
+            <p></p>
         </div>
     );
 }

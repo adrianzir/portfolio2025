@@ -1,3 +1,9 @@
+#projects {
+    width: auto;
+    padding-top: 2rem;
+    border-top: 1px outset #07cb00;
+    margin: 3rem 3rem 0 3rem;
+}
 .projects-section {
     width: 100%;
     overflow-x: auto;

@@ -1,0 +1,6 @@
+.footer{
+    min-height: 20vh;
+    border-top: 1px outset #07cb00;
+    margin: 4.5rem 3rem 0 3rem;
+    width: auto;
+}
