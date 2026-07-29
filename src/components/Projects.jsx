@@ -11,10 +11,10 @@ function Projects() {
             <div className="center projects-section">
                 <div className="projects-carousel">
                 <Rectangle
-                title="Dashboard for personal finances"
+                title="Personal Finance Tracker"
                 body="Personal Finance Tracker – Web application for managing personal finances, allowing users to record income and expenses, organize transactions by category, and visualize financial data through interactive dashboards. Built with Flask, SQLAlchemy, SQLite, and Chart.js."
-                img="" 
-                altImg=""
+                img="/finance_tracker_img_1.JPG" 
+                altImg="landing page Finance Traker"
                 skill1="Python"
                 skill2="Flask"
                 skill3="JavaScript"
@@ -22,7 +22,7 @@ function Projects() {
                 skill5 ="SQLAlchemy"
                 />
                 <Rectangle
-                title="App de rutinas de gimnasio"
+                title="Gym routines APP"
                 body="GYM-APP – Web application for managing gym workout routines (Push/Pull/Legs), built with Flask, Jinja2, and JavaScript. It allows users to create, edit, and delete workout routines with multiple exercises dynamically, using JSON for data persistence."
                 img="/gym_app_img_1.JPG" 
                 altImg="landing page gym app"
@@ -34,7 +34,7 @@ function Projects() {
                 dpskill5 ="display"           
                 />
                 <Rectangle
-                title="Portal de venta seguros"
+                title="Ensurance CO. Portal"
                 body="Frontal Seguros – Web-based insurance platform that allows users to browse available insurance products and purchase policies online. Customers can register, log in, complete the purchase process, and access a personalized dashboard to manage their policies. The backend was developed with Python and Django, using SQLite as the database, while the frontend was built with the Django template engine and styled with modern, responsive CSS.
                 "
                 img=""
@@ -58,14 +58,14 @@ function Projects() {
                 dpskill5="display"
                 />
                 <Rectangle
-                title="Working on it"
-                body=""
+                title="Football App"
+                body="Football Stats App – built with React and Vite that consumes the APIFootball REST API to display football statistics. The application retrieves countries, competitions, and top scorers, manages asynchronous requests with Fetch API, and uses React Router for client-side navigation. Data is managed through React Hooks (useState and useEffect) and rendered dynamically based on user selections."
                 img=""
                 altImg=""
-                dpskill1="display"
-                dpskill2="display"
-                dpskill3="display"
-                dpskill4="display"
+                skill1="React"
+                skill2="VITE"
+                skill3="REST API (APIFootball)"
+                skill4="Javascript"
                 dpskill5="display"
                 />
                 </div>

@@ -61,4 +61,39 @@
     padding: 0;
     margin: 0;
     justify-content: end;
+    position: relative;
+}
+.popup{
+    position: absolute;
+    left: 50%;
+    bottom: 10%;
+    transform: translateX(-50%);
+    padding: 10px 16px;
+    border-radius: 8px;
+    background: rgba(35, 35, 35, 0.95);
+    color: #fff;
+    font-size: 0.9rem;
+    white-space: nowrap;
+    z-index: 999;
+    pointer-events: none;
+    opacity: 0;
+    animation: fadeMessage 2.5s ease forwards;
+}
+
+@keyframes fadeMessage {
+    0% {
+        opacity: 0;
+        transform: translateX(-50%) translateY(10px);
+    }
+    15% {
+        opacity: 1;
+        transform: translateX(-50%) translateY(0);
+    }
+    80% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+        transform: translateX(-50%) translateY(-10px);
+    }
 }

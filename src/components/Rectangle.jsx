@@ -1,11 +1,12 @@
 import React from "react";
 import "../stylesheets/basics.css";
 import "../stylesheets/projects.css";
+import { useState } from "react";
 
 function Rectangle(props) {
-    if (props.skills1, props.skill2, props.skill3, props.skill4, props.skill5 === undefined) {
-        
-    }
+    const [mensaje, setMensaje] = useState("");
+    const [mostrarPopup, setMostrarPopup] = useState(false);
+
     return <div className="card">
         <div className="upper-block">
         <h3>{props.title}</h3>
@@ -23,7 +24,29 @@ function Rectangle(props) {
             </div>
         </div>
 
-        <a class="btn" href={props.link} target="_blank">Open</a>
+        <a
+            className="btn"
+            href={props.link || "#"}
+            target="_blank"
+            onClick={(e) => {
+            if (!props.link) {
+            e.preventDefault();
+            setMostrarPopup(true);
+            setTimeout(() => {
+                            setMostrarPopup(false);
+                }, 3000);
+
+            }
+            }}
+        >Open
+        </a>
+
+        {mostrarPopup && (
+            <p className="popup">
+                Currently this link is not available.
+            </p>
+        )}
+        
         </div>
     </div>;
 }
