@@ -49,7 +49,7 @@ function Projects() {
             />
             <Rectangle
               title="Web Store"
-              body="Online web clothing store, a simple e-commerce site where users can browse products, add to cart, and simulate checkout."
+              body="Wildd Store – It is an e-commerce site where users can browse clothing products, and add to cart."
               img="/wild_store_img.JPG"
               link=""
               altImg="Wildd Store Image https://adrianzir.github.io/wild_clothes_2/"

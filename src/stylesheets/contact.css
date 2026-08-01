@@ -10,11 +10,12 @@
 .icon{
     font-size: 2rem;
     margin: 0 10px;
-    color : #08CB00;
+    color : var(--accent);
 }
 
 .icon:hover{
-    color: #EEEEEE;
+    color: var(--accent-hover);
+    -webkit-text-stroke: 1px var(--black);
     cursor: pointer;
     transform: scale(1.2);
     transition: color 0.3s, transform 0.3s;

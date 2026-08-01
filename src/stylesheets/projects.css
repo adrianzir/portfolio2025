@@ -1,7 +1,7 @@
 #projects {
     width: auto;
     padding-top: 2rem;
-    border-top: 1px outset #07cb00;
+    border-top: 1px outset var(--accent);
     margin: 3rem 3rem 0 3rem;
 }
 .projects-section {
@@ -19,7 +19,7 @@
 }
 
 .projects-section::-webkit-scrollbar {
-    background-color: #24304A;
+    background-color: var(--card-bg);
     height: 6px;
     border-radius: 10px;
 
@@ -27,20 +27,35 @@
 }
 
 .projects-section::-webkit-scrollbar-thumb {
-    background: #08CB00;
+    background: var(--accent);
     border-radius: 10px;
 }
 .skills{
     flex-direction: column;
-    padding: 1rem;
+    padding: 0.5rem;
 }
 #skills_div{
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-evenly;
+    justify-content: space-around;
     gap: 10px;
     margin: 1rem 0;
 }
+
+.skill_span {
+    background-color: transparent;
+    color: var(--text-primary);
+    padding: 10px 20px;
+    border: 2px solid var(--accent);
+    border-radius: 8px;
+    font-weight: lighter;
+    height: 2rem;
+    width: fit-content;
+    font-size: small;
+    display: flex;
+    align-items: center;
+}
+
 .rectangle_img {
     width: 100%;
     border-radius: 8px;
@@ -55,6 +70,20 @@
     flex-direction: column;
     padding: 0;
     margin: 0;
+}
+
+.rectangle_div_p {
+    max-height:15vh;
+    overflow: hidden;
+    align-items: start;
+    position: relative;
+}
+.rectangle_div_p.expanded {
+    max-height: none;
+}
+
+.rectangle_body_p {
+    text-align: center;
 }
 .lower-block {
     display: flex;

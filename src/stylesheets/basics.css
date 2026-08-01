@@ -1,84 +1,143 @@
-/* Reset básico */
+/* ==========================
+   VARIABLES
+========================== */
+
+:root {
+    --bg-primary: #1A2233;
+    --bg-secondary: #1E2230;
+    --bg-tertiary: #171B26;
+    --card-bg: #24304A;
+
+    --text-primary: #EEEEEE;
+    --text-secondary: #1A2233;
+    --accent: #08CB00;
+    --accent-hover: #07cb00bf;
+
+    --black: #000000;
+
+    --shadow: rgba(0, 0, 0, 0.3);
+
+    --gradient-green: rgba(8, 203, 0, 0.08);
+    --gradient-blue: rgba(120, 140, 255, 0.10);
+    --gradient-white: rgba(255, 255, 255, 0.04);
+}
+
+/* ==========================
+   LIGHT THEME
+========================== */
+
+[data-theme="light"] {
+    --bg-primary: #d9dcfe;
+    --bg-secondary: #d9dcfe;
+    --bg-tertiary: #ECEFF1;
+    --card-bg: #FFFFFF;
+
+    --text-primary: #1A2233;
+    --text-secondary: #FFFFFF;
+    --accent: #0a6cf5;
+    --accent-hover: #e7f50a;
+
+    --black: #000000;
+
+    --shadow: rgba(0, 0, 0, 0.15);
+
+    --gradient-green: rgba(46, 125, 50, 0.08);
+    --gradient-blue: rgba(100, 149, 237, 0.08);
+    --gradient-white: rgba(255, 255, 255, 0.25);
+}
+/* ==========================
+   RESET
+========================== */
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
 }
-body {
-    background-color: #1A2233;
-    background-image:
-        radial-gradient(circle at 15% 20%, rgba(8, 203, 0, 0.08) 0%, transparent 22%),
-        radial-gradient(circle at 85% 10%, rgba(120, 140, 255, 0.10) 0%, transparent 28%),
-        radial-gradient(circle at 50% 80%, rgba(255, 255, 255, 0.04) 0%, transparent 26%),
-        linear-gradient(135deg, #1E2230 0%, #171B26 100%);
 
+/* ==========================
+   BODY
+========================== */
+
+body {
+    background-color: var(--bg-primary);
+    background-image:
+        radial-gradient(circle at 15% 20%, var(--gradient-green) 0%, transparent 22%),
+        radial-gradient(circle at 85% 10%, var(--gradient-blue) 0%, transparent 28%),
+        radial-gradient(circle at 50% 80%, var(--gradient-white) 0%, transparent 26%),
+        linear-gradient(135deg, var(--bg-secondary) 0%, var(--bg-tertiary) 100%);
     background-attachment: fixed;
 }
-/* Contenedor principal centrado */
+
+/* ==========================
+   LAYOUT
+========================== */
+
 .container {
     display: flex;
-    width: 100%;
-    height: 100%;
     flex-direction: column;
-    /* Apila elementos */
     align-items: center;
-    /* Centra horizontal */
     justify-content: center;
-    text-align: center;
-    /* Centra vertical */
+
+    width: 100%;
     min-height: 100vh;
-    /* gris oscuro */
-    color: #EEEEEE;
-    /* gris claro */
     padding: 25px;
-}
 
-/* Caja con estilos */
-.card {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: #24304A;
-    justify-content: space-between;
-    /* verde oscuro */
-    color: #EEEEEE;
-    /* texto claro */
-    border-radius: 12px;
-    padding: 15px;
-    margin: 15px 10px;
-    width: 300px;
     text-align: center;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-    /* más oscuro */
+    color: var(--text-primary);
 }
 
-/* Títulos */
-h1,
-h2,
-h3 {
-    margin-bottom: 15px;
-    color: #08CB00;
-    /* verde brillante */
+.center {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
-/* Texto */
-p {
-    margin-bottom: 10px;
-    line-height: 1.5;
-    color: #EEEEEE;
-}
-a {
-    text-decoration: none;
-}
-
-/* Centrado de texto */
 .text-center {
     text-align: center;
 }
 
-.center{
+/* ==========================
+   CARD
+========================== */
+
+.card {
     display: flex;
-    align-items: center;
+    flex-direction: column;
     justify-content: space-between;
+    align-items: center;
+
+    width: 300px;
+    margin: 15px 10px;
+    padding: 15px;
+
+    background-color: var(--card-bg);
+    color: var(--text-primary);
+
+    border-radius: 12px;
+    box-shadow: 0 4px 10px var(--shadow);
+
+    text-align: center;
+}
+
+/* ==========================
+   TYPOGRAPHY
+========================== */
+
+h1,
+h2,
+h3 {
+    margin-bottom: 15px;
+    color: var(--accent);
+}
+
+p {
+    margin-bottom: 5px;
+    line-height: 1.5;
+    color: var(--text-primary);
+}
+
+a {
+    text-decoration: none;
 }

@@ -4,17 +4,14 @@
     width: 100%;
     display: flex;
     justify-content: space-around;
-    /* separa logo y links */
     align-items: center;
-    background-color: #24304A;
-    /* verde oscuro */
+    background-color: var(--card-bg);
     padding: 15px 30px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+    box-shadow: 0 4px 10px var(--shadow);
 }
 
 .navbar-title {
-    color: #08CB00;
-    /* verde brillante */
+    color: var(--accent);
     font-size: 24px;
     font-weight: bold;
 }
@@ -24,7 +21,6 @@
     list-style: none;
     display: flex;
     gap: 20px;
-    /* espacio entre links */
     margin: 0;
     padding: 0;
 }
@@ -32,8 +28,7 @@
 /* Links */
 .navbar ul li a {
     text-decoration: none;
-    color: #EEEEEE;
-    /* gris claro */
+    color: var(--text-primary);
     font-weight: 500;
     padding: 8px 12px;
     border-radius: 6px;
@@ -42,18 +37,14 @@
 
 /* Hover en links */
 .navbar ul li a:hover {
-    background-color: #08CB00;
-    /* verde brillante */
-    color: #000000;
-    /* negro */
+    background-color: var(--accent);
+    color: var(--black);
 }
 
 /* Botón especial */
 .navbar .btn-nav {
-    background-color: #08CB00;
-    /* verde brillante */
-    color: #000000;
-    /* negro */
+    background-color: var(--accent);
+    color: var(--black);
     padding: 8px 16px;
     border-radius: 8px;
     border: none;
@@ -63,8 +54,10 @@
 }
 
 .navbar .btn-nav:hover {
-    background-color: #37353E;
-    /* gris oscuro */
-    color: #EEEEEE;
-    /* gris claro */
+    background-color: var(--bg-secondary);
+    color: var(--text-primary);
+}
+
+#theme_btn {
+    margin: 0;
 }
